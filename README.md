@@ -46,7 +46,7 @@
     <div id="lock-screen">
         <div class="pw-box">
             <h3>Enter Password</h3>
-            <p>Hint: Her name (sahanaz)</p>
+            <p>Hint: key will be provided by admin</p>
             <input type="password" id="pw" placeholder="password...">
             <br>
             <button onclick="checkPw()">Enter Surprise</button>
