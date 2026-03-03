@@ -9,7 +9,32 @@
         :root { --pink: #ffb7c5; --deep-pink: #d02090; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        body { height: 100vh; display: flex; justify-content: center; align-items: center; background: #000; font-family: 'Poppins', sans-serif; overflow: hidden; }
+:root { --pink: #ffb7c5; --deep-pink: #d02090; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+   /* This locks the password box so it cannot wobble */
+#lock-screen { 
+    position: fixed; 
+    inset: 0; 
+    background: #ffb7c5; 
+    z-index: 9999; /* Higher than everything else */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: opacity 0.5s;
+}
+
+.pw-box { 
+    position: relative;
+    padding: 40px; 
+    background: white; 
+    border-radius: 20px; 
+    text-align: center; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 85%; /* Responsive for Android */
+    max-width: 320px;
+}
+
 
         /* Animated Sakura Forest Background */
         .forest-bg { position: fixed; inset: 0; background: url('https://images.unsplash.com/photo-1522383225653-ed111181a951?q=80&w=2070&auto=format&fit=crop') no-repeat center center; background-size: cover; z-index: -2; filter: brightness(0.7); }
