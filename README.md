@@ -102,7 +102,7 @@
         </div>
 
         <div class="page cover" id="p1" style="z-index: 4;" onclick="flip('p1')">
-            <h1>Happy Birthday<br>Shahnaz Parvin</h1>
+            <h1>Happy Birthday<br>Sahanaz Parvin</h1>
             <p style="color: white; margin-top: 20px;">(Tap to open)</p>
         </div>
     </div>
